@@ -8,6 +8,7 @@ import carrotsImage from "@/assets/emberlane-carrots.jpg";
 import interiorImage from "@/assets/emberlane-interior.jpg";
 import scallopsImage from "@/assets/emberlane-scallops.jpg";
 import eveningImage from "@/assets/emberlane-evening.jpg";
+import mark from "@/assets/emberlane_kitchen_logo.png"
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,7 +46,7 @@ const reviews = [
 ];
 
 function Mark({ light = false }: { light?: boolean }) {
-  return <a href="#home" aria-label="Emberlane Kitchen home" className="block"><img src={{'@/assets/emberlane_kitchen_logo.png'}} alt="Emberlane Kitchen" className={`h-12 w-auto object-contain ${light ? "brightness-0 invert" : ""}`} width={1408} height={768} /></a>;
+  return <a href="#home" aria-label="Emberlane Kitchen home" className="block"><img src={mark} alt="Emberlane Kitchen" className={`h-12 w-auto object-contain ${light ? "brightness-0 invert" : ""}`} width={1408} height={768} /></a>;
 }
 
 function Index() {
